@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://maps.mapmyindia.com/covid-places/showNearbyCovidPlacesOnMap.js"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#Statistics">Statistics</a></li>
+            <li><a href="#protect">protect</a></li>
+            <li><a href="#symptoms">Symptoms</a></li>
+            <li><a href="http://covid19game.orgfree.com/"><h3 href="#" class="logo">c<span class="fas fa-virus"></span>vid Game</a></li>
+            <li><a href="http://covid19quiz.orgfree.com/"><h3 href="#" class="logo">c<span class="fas fa-virus"></span>vid Quiz</a></li>    
+            
+            <li><a href="https://www.cowin.gov.in">vaccination </a></li>
+            <!--li><a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">helpline</a></li-->
+            <li><a href="#AboutUS">About Us</a></li>
+
+    
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+
+        <span>Covid-19</span>
+        <h3>stay safe, stay home</h3>
+        <p>A powerful attitude awakens inner strength, energy, motivation, and initiative. Keep your attitude positive and fight the coronavirus by staying home, staying safe..</p>
+        <a href="https://my.clevelandclinic.org/health/diseases/21214-coronavirus-covid-19" class="btn">About COVID-19</a>
+
+    </div>
+
+    <div class="image">
+        <img src="home-img.png" alt="">
+    </div>
+
+</section>
+
+<section  id="Statistics">
+        <div class="text-center title maos">
+            <a href="#" class="btn">Statistics</a>
+            <br></br>
+            
+            <h2>Live updates of COVID-19</h2>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6  col-md-12 col-12 map-img">
+                    <img src="mapnew.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="india">
+                        <h1>India</h1>
+                        <hr>
+                        <div class="flex-card">
+                            <div class="con">
+                                <h1>Confirmed</h1>
+                                <h2 id="conin"></h2>
+                                <h4>New Cases</h4>
+                                <h3 id ="coninew" ></h3>
+
+                            </div>
+                            <div class="rev">
+                                <h1>Recovered</h1>
+                                <h2 id="revin"></h2>
+                                <h4>recovered today</h4>
+                                <h3 id ="nrevin" ></h3>
+                            </div>
+                            <div class="dea">
+                                <h1>Deaths</h1>
+                                <h2 id="detin"></h2>
+                                <h4>decreased</h4>
+                                <h3 id ="ndetin" ></h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="world">
+                        <h1>Worldwide</h1>
+                        <hr>
+                        <div class="flex-card">
+                            <div class="con">
+                                <h1>Confirmed</h1>
+                                <h2 id="globco"></h2>
+                                <h4>New Cases</h4>
+                                <h3 id ="newglobco" ></h3>
+
+                            </div>
+                            <div class="rev">
+                                <h1>Recovered</h1>
+                                <h2 id="globro"></h2>
+                                <h4>recovered today</h4>
+                                <h3 id ="nglobro" ></h3>
+                            </div>
+                            <div class="dea">
+                                <h1>Deaths
+                                </h1>
+                                <h2 id="globdo"></h2>
+                                <h4>decreased</h4>
+                                <h3 id ="nglobdo" ></h3>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="https://www.mygov.in/covid-19">View All</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br></br>
+ <!--   <div class="text-center title maos">
+        <h2>Coronavirus Cases in World for Last Three Months</h2>    
+        <canvas id="myChart" height="23vh" width="60vw >
+        </canvas>
+    </div>
+    <div class= "myList></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>-->
+    <iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&zoomToSelection=true&hideControls=true&Metric=Confirmed+cases&Interval=Cumulative&Relative+to+Population=false&Align+outbreaks=false&country=~OWID_WRL" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+    <iframe   src="https://maps.mapmyindia.com/corona" allow="geolocation" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" >
+</iframe>
+        
+        
+    </section>
+
+
+
+
+
+
+<!-- home section ends -->
+
+<section class="protect" id="protect">
+
+    <h1 class="heading">take steps to <span>protect</span> yourself</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="protect-1.png" alt="">
+            <h3>Wear A Face Mask</h3>
+            <p>Clean your hands before you put your mask on, as well as before and after you take it off, and after you touch it at any time.
+Make sure it covers both your nose, mouth and chin.</p>
+            
+        </div>
+
+        <div class="box">
+            <img src="protect-2.png" alt="">
+            <h3>Wash Your Hands</h3>
+            <p>Germs from unwashed hands can be transferred to other objects, like handrails, table tops, or toys, and then transferred to another person's hands. Removing germs through handwashing therefore helps prevent diarrhea and respiratory infections and may even help prevent skin and eye infections.</p>
+            
+        </div>
+
+        <div class="box">
+            <img src="protect-3.png" alt="">
+            <h3>Avoid Close Contact</h3>
+            <p>Maintain at least a 1-metre distance between yourself and others to reduce your risk of infection when they cough, sneeze or speak. Maintain an even greater distance between yourself and others when indoors.</p>
+            
+        </div>
+
+    </div>
+
+</section>
+
+<!-- symtoms section starts  -->
+
+<section class="symptoms" id="symptoms">
+
+    <div class="content">
+        <h1 class="heading">What Are The Main <span>Symptoms?</span></h1>
+        <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.
+.</p>
+        <ul>
+            <div class="one">
+                <li>fever</li>
+                <li>Tiredness</li>
+                <li>Dry Cough</li>
+            </div>
+            <div class="two">
+                <li>Sore Throat</li>            
+                <li>Aches and Pains</li>
+                <li>Shortness of Breath</li>
+            </div>
+        </ul>
+        <a href="#" class="btn">know more</a>
+    </div>
+
+    <div class="image">
+        <img src="symptoms-img.png" alt="">
+    </div>
+
+</section>
+
+<!-- symtoms section ends -->
+
+<!-- prevent section starts  -->
+
+<section class="prevent" id="prevent">
+
+    <div class="row">
+
+        <div class="image">
+            <img src="dont-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <h1 class="heading">things <span>not to do</span> during covid</h1>
+            <p>Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local health authority.
+</p>
+            <ul>
+                <li>Do Not Share Eating</li>
+                <li>Do Not Touch Your Face or Nose</li>
+                <li>Do Not Contact Sick People</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="content">
+            <h1 class="heading">things <span>to do</span> during covid</h1>
+            <p>Masks can help prevent the spread of the virus from the person wearing the mask to others. Masks alone do not protect against COVID-19, and should be combined with physical distancing and hand hygiene. Follow the advice provided by your local health authority.</p>
+            <ul>
+                <li>Wash Your Hands For 20 sec</li>
+                <li>Don’t touch your eyes, nose or mouth</li>
+                <li>If you have a fever, cough and difficulty breathing, seek medical attention</li>
+            </ul>
+        </div>
+
+        <div class="image">
+            <img src="do-img.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- prevent section ends -->
+
+<!-- handwash section starts  -->
+
+<section class="handwash" id="handwash">
+
+    <h1 class="heading">how to <span>wash you hand</span> properly</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span>1</span>
+            <img src="hadnwash-1.png" alt="">
+            <h3>Apply Soap on Hand</h3>
+        </div>
+
+        <div class="box">
+            <span>2</span>
+            <img src="hadnwash-2.png" alt="">
+            <h3>Palm to Palm</h3>
+        </div>
+
+        <div class="box">
+            <span>3</span>
+            <img src="hadnwash-3.png" alt="">
+            <h3>Between Fingers</h3>
+        </div>
+
+        <div class="box">
+            <span>4</span>
+            <img src="hadnwash-4.png" alt="">
+            <h3>Back of The Hands</h3>
+        </div>
+
+        <div class="box">
+            <span>5</span>
+            <img src="hadnwash-5.png" alt="">
+            <h3>clean with water</h3>
+        </div>
+
+        <div class="box">
+            <span>6</span>
+            <img src="hadnwash-6.png" alt="">
+            <h3>Use Towel to Dry</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- handwash section ends -->
+
+<!--map and tracking starts -->
+
+<div>
+    <img src="covid.gif" class="img-responsive" alt="" width="1320" height="400">
+</div>
+
+ 
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer" id="AboutUS">
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <h3>about the website</h3>
+            <p>this website is made by using html,css,javascript,bootstrap & COVID19 API.these skills are learned during workshop conducted by INNOOVATUM.</p>
+        </div>
+
+
+
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="home" id="home">home</a>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html"id="protect">protection</a>
+            <a href="https://covid19health.bihar.gov.in/DailyDashboard/BedsOccupied">Bed Availability</a>
+            <a href="https://www.worldometers.info/coronavirus/">Worldometer</a>
+            
+            <a href="https://www.aarogyasetu.gov.in/"id=handwash>aarogyasetu</a>
+            <a href="https://patna.nic.in/noticecovid-19-application-for-issuing-e-pass-for-essential-service-under-national-disaster/">application for e-pass Bihar</a>
+
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> +918252183774</p>
+            <p> <i class="fas fa-envelope"></i> Sumita.ug18.Ec@nitp.ac.in </p>
+            <p> <i class="fas fa-map-marker-alt"></i> Patna,Bihar-800001 </p>
+            <div class="share">
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="instagram.com/sumit_16ashi/" class="fab fa-instagram"></a>
+            </div>
+        </div>
+        
+    </div>
+     
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7825776&style=0006&nbdigits=5&type=page&initCount=63" title="Free Counter" Alt="web counter" class="counter"  border="0" /></a>     
+
+    <h1 class="credit"> created by <a href="#"> SUMIT ASHISH </a> all rights reserved! </h1>
+
+
+</section>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+
+<!-- footer section ends -->
+
+<!-- scroll top  -->
+
+<a href="#home" class="scroll-top">
+    <img src="scroll-img.png" alt="">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+
+</body>
+</html>
